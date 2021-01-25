@@ -7,4 +7,16 @@
 }
 body {
 	font-family: "Bodoni-Moda", sans-serif;
+	line-height: 1.7;
+	font-weight: 400;
+
+}
+.myHeader {
+	height: 95vh;
+	background-image: linear-gradient(to right,
+	 rgba(), rgba()),
+	 url(../img/bgs/pix.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
 }
