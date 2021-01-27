@@ -9,14 +9,39 @@ body {
 	font-family: "Bodoni-Moda", sans-serif;
 	line-height: 1.7;
 	font-weight: 400;
+	padding: 30px;
 
 }
 .myHeader {
+	position: relative;
 	height: 95vh;
 	background-image: linear-gradient(to right,
-	 rgba(), rgba()),
+	 rgba(246, 246, 246, 0.85), rgba(255, 255, 255, 0.5)),
 	 url(../img/bgs/pix.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: top;
+	clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+}
+.logo-box {
+	position: absolute;
+	top: 30px; 
+	left: 30px;
+}
+.logo {
+	height: 60px;
+}
+.heading-primary {
+	text-transform: uppercase;
+}
+.heading-primary-main {
+	display: block;
+	font-size: 15px;
+	font-weight: 700;
+	letter-spacing: 20px;
+}
+.heading-primary-sub {
+	display: block;
+	font-size: 15px;
+	letter-spacing: 10px;
 }
