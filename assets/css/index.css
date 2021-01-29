@@ -31,17 +31,31 @@ body {
 .logo {
 	height: 60px;
 }
+.text-box {
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
 .heading-primary {
 	text-transform: uppercase;
 }
 .heading-primary-main {
+	text-align: center;
 	display: block;
 	font-size: 15px;
 	font-weight: 700;
-	letter-spacing: 20px;
+	letter-spacing: 12px;
 }
 .heading-primary-sub {
 	display: block;
 	font-size: 15px;
-	letter-spacing: 10px;
+	letter-spacing: 5px;
+}
+
+/**myanimations**/
+@keyframes moveInLeft {
+	0%{}
+	50%{}
+	100%{}
 }
