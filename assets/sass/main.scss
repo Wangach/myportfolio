@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@700&display=swap');
+$color-primary-light: rgb(246, 246, 246);
+$color-primary-dark: rgb(255, 255, 255);
+$color-light-dark: rgb(0,0,0);
+$color-blue: #219DBB;
+$color-gray: #ccc;
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+html {
+	font-size: 62.5%;
+}
+body {
+	font-family: "Bodoni-Moda", sans-serif;
+	line-height: 1.7;
+	font-weight: 400;
+	padding: 3rem;
+	box-sizing: border-box;
+
+}
+.myHeader {
+	position: relative;
+	height: 95vh;
+	background-image: linear-gradient(to right,
+	 rgba($color-primary-light, 0.85), rgba($color-primary-dark, 0.5)),
+	 url(../img/bgs/pix.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top;
+	clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+
+	&__logo-box {
+		position: absolute;
+		top: 3rem; 
+		left: 3rem;
+	}
+	&__text-box {
+		position: absolute;
+		top: 40%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		text-align: center;
+	}
+}
+.logo {
+	height: 6rem;
+}
+.heading-primary {
+	text-transform: uppercase;
+	margin-bottom: 5rem;
+
+	&-main {
+		text-align: center;
+		display: block;
+		font-size: 1.5rem;
+		font-weight: 700;
+		letter-spacing: 1.2rem;
+		animation-name: moveInRight;
+		animation-duration: 2s;
+		animation-fill-mode: forwards;
+		backface-visibility: hidden;
+	}
+	&-sub {
+		display: block;
+		font-size: 1.2rem;
+		letter-spacing: .5rem;
+		animation-name: moveInLeft;
+		animation-duration: 2s;
+		animation-fill-mode: forwards;
+		backface-visibility: hidden;
+	}
+}
+.btn{
+	&:link,&:visited {
+		text-decoration: none;
+		text-transform: uppercase;
+		padding: 1.2rem;
+		border-radius: 3rem;
+		display: inline-block;
+		transition: all .2s;
+		font-size: 1.6rem;
+	}
+	&:hover {
+		transform: translateY(-.3rem);
+		box-shadow: 0 2rem 1rem rgba($color-light-dark,.2);
+	}
+	&:active {
+		transform: translateY(-1px);
+		box-shadow: 0 1rem 5rem rgba($color-light-dark,.2);
+	}
+	&-blue {
+		background: $color-blue;
+		color: $color-gray;
+	}
+}
+/**myanimations**/
+@keyframes moveInRight {
+	0%{
+		opacity: 0;
+		transform: translateX(-2rem);
+	}
+	50%{
+		opacity: 0.5;
+		transform: translateX(1rem);
+	}
+	100%{
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+@keyframes moveInLeft {
+	0%{
+		opacity: 0;
+		transform: translateX(2rem);
+	}
+	50%{
+		opacity: 0.5;
+		transform: translateX(-1rem);
+	}
+	100%{
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}

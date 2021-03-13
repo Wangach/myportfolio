@@ -1,0 +1,23 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "My Online Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "compile-sass": "node-sass assets/sass/main.scss assets/css/index.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wangach/myportfolio.git"
+  },
+  "author": "Johnito",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Wangach/myportfolio/issues"
+  },
+  "homepage": "https://github.com/Wangach/myportfolio#readme",
+  "devDependencies": {
+    "node-sass": "^5.0.0",
+    "sass": "^1.32.8"
+  }
+}
