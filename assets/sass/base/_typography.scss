@@ -1,0 +1,54 @@
+body {
+	font-family: "Bodoni-Moda", sans-serif;
+	line-height: 1.7;
+	font-weight: 400;
+	padding: 3rem;
+}
+.heading-primary {
+	text-transform: uppercase;
+	margin-bottom: 5rem;
+
+	&-main {
+		text-align: center;
+		display: block;
+		font-size: 1.5rem;
+		font-weight: 700;
+		letter-spacing: 1.2rem;
+		animation-name: moveInRight;
+		animation-duration: 2s;
+		animation-fill-mode: forwards;
+		backface-visibility: hidden;
+	}
+	&-sub {
+		display: block;
+		font-size: 1.2rem;
+		letter-spacing: .5rem;
+		animation-name: moveInLeft;
+		animation-duration: 2s;
+		animation-fill-mode: forwards;
+		backface-visibility: hidden;
+	}
+}
+.btn{
+	&:link,&:visited {
+		text-decoration: none;
+		text-transform: uppercase;
+		padding: 1.2rem;
+		border-radius: 3rem;
+		display: inline-block;
+		transition: all .2s;
+		font-size: 1.6rem;
+	}
+	&:hover {
+		transform: translateY(-.3rem);
+		box-shadow: 0 2rem 1rem rgba($color-light-dark,.2);
+	}
+	&:active {
+		transform: translateY(-1px);
+		box-shadow: 0 1rem 5rem rgba($color-light-dark,.2);
+	}
+	&-blue {
+		background: $color-blue;
+		color: $color-gray;
+	}
+}
